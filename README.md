@@ -9,6 +9,30 @@ Si può fare? Certo che si basta ragionare un po’.
 
 Nota: Non è necessario provvedere alla validazione delle email
 
+HUMAN CODE:
+
+-SCELGO CHI INVITARE ALLA FESTA
+
+-CREO UNA LISTA DI INVITATI ALLA FESTA IDENTIFICANDOLI CON LA LORO EMAIL
+
+-INIZIA LA FESTA
+
+-FINCHE ARRIVANO DELLE PERSONE E LE PERSONE INVITATE NON SONO TUTTE PRESENTI
+
+    -TI CHIEDO L'EMAIL
+        -SE L'EMAIL DELLA PERSONA CHE VUOLE PARTECIPARE SI TROVA NELLA LISTA
+            -PUO PARTECIPARE ALLA FESTA
+        -ALTRIMENTI
+            -NON PUO PARTECIPARE ALLA FESTA
+
+-FINE DEL CONTROLLO EMAIL
+
+
+
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 TRACCIA 2:
