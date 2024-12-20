@@ -48,22 +48,19 @@ if (userEmail.match(validRegex)) {
 //TRACCIA 2
 
 //VARs
-//Creo l'array che useremo come dado
-const dadoSix = [1, 2, 3, 4, 5, 6];
-
 //Risultati lanci
 let userRes = 0;
 let pcRes = 0;
 
 //METHODS
 //Lancio del dado per l'utente
-userRes = Math.floor(Math.random() * dadoSix.length) + 1;
+userRes = Math.floor(Math.random() * 6) + 1;
 console.log(
   `Il giocatore ha tirato il dado è ha ottenuto il numero ${userRes}`
 );
 
 //Lancio del dado per il pc
-pcRes = Math.floor(Math.random() * dadoSix.length) + 1;
+pcRes = Math.floor(Math.random() * 6) + 1;
 console.log(`Il computer ha tirato il dado è ha ottenuto il numero ${pcRes}`);
 
 //Confronto i risultati e decreto il vincitore
