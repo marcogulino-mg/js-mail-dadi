@@ -24,7 +24,7 @@ const birthdayList = [
 
 //Stringa contenente la formattazione corretta dell'email
 let validRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-
+console.log(userEmail.match(validRegex));
 //Se l'email rispecchia la formattazione dichiarata sopra allora potrò fare il confronto con il contenuto dell'array
 if (userEmail.match(validRegex)) {
   for (let i = 0; i < birthdayList.length; i++) {
@@ -57,13 +57,13 @@ let pcRes = 0;
 
 //METHODS
 //Lancio del dado per l'utente
-userRes = Math.floor((Math.random() * dadoSix.length) + 1);
+userRes = Math.floor(Math.random() * dadoSix.length) + 1;
 console.log(
   `Il giocatore ha tirato il dado è ha ottenuto il numero ${userRes}`
 );
 
 //Lancio del dado per il pc
-pcRes = Math.floor((Math.random() * dadoSix.length) + 1);
+pcRes = Math.floor(Math.random() * dadoSix.length) + 1;
 console.log(`Il computer ha tirato il dado è ha ottenuto il numero ${pcRes}`);
 
 //Confronto i risultati e decreto il vincitore
