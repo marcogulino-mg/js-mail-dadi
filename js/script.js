@@ -38,3 +38,10 @@ if (checkEmail == true) {
 
 //TRACCIA 2
 
+//VARs
+//Creo l'array che useremo come dado
+const dadoSix = [1, 2, 3, 4, 5, 6];
+
+//Risultati lanci
+let userRes = 0;
+let pcRes = 0;
