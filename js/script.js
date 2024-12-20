@@ -1,10 +1,10 @@
 //TRACCIA 1
 
 //VARs
-//Inserisco l'email da utilizzare per il confronto con la lista
+//Inserisco l'email da utilizzare per il confronto con la lista e la rendo minuscola
 let userEmail = prompt(
   "Inserisci l'email da confrontare con la lista degli invitati"
-);
+).toLowerCase();
 
 //Variabile booleana che indica se l'email è presente o meno nella lista
 let checkEmail = false;
@@ -20,9 +20,6 @@ const birthdayList = [
 ];
 
 //METHODS
-//Rendo l'email tutta minuscola
-userEmail.toLowerCase();
-
 
 for (let i = 0; i < birthdayList.length; i++) {
   //Se l'email è presente nella lista allora la persona potrà partecipare alla festa
