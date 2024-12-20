@@ -45,3 +45,21 @@ const dadoSix = [1, 2, 3, 4, 5, 6];
 //Risultati lanci
 let userRes = 0;
 let pcRes = 0;
+
+//METHODS
+//Lancio del dado per l'utente
+userRes = Math.floor(Math.random() * dadoSix.length);
+console.log(`Il giocatore ha tirato il dado è ha ottenuto il numero ${userRes}`);
+
+//Lancio del dado per il pc
+pcRes = Math.floor(Math.random() * dadoSix.length);
+console.log(`Il computer ha tirato il dado è ha ottenuto il numero ${pcRes}`);
+
+//Confronto i risultati e decreto il vincitore
+if(userRes > pcRes) {
+    console.log("Il giocatore vince!");
+} else if(userRes < pcRes) {
+    console.log("Il computer vince!");
+} else {
+    console.log("Pareggio!");
+}
