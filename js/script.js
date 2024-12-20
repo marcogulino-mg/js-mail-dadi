@@ -20,6 +20,10 @@ const birthdayList = [
 ];
 
 //METHODS
+//Rendo l'email tutta minuscola
+userEmail.toLowerCase();
+
+
 for (let i = 0; i < birthdayList.length; i++) {
   //Se l'email è presente nella lista allora la persona potrà partecipare alla festa
   if (userEmail == birthdayList[i]) {
