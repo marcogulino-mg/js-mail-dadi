@@ -20,22 +20,33 @@ const birthdayList = [
 ];
 
 //METHODS
+//Controllo che l'email sia formattata correttamente
 
-for (let i = 0; i < birthdayList.length; i++) {
-  //Se l'email è presente nella lista allora la persona potrà partecipare alla festa
-  if (userEmail == birthdayList[i]) {
-    checkEmail = true;
-    break;
+//Stringa contenente la formattazione corretta dell'email
+let validRegex =
+  /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+//Se l'email rispecchia la formattazione dichiarata sopra allora potrò fare il confronto con il contenuto dell'array
+if (userEmail.match(validRegex)) {
+
+  for (let i = 0; i < birthdayList.length; i++) {
+    //Se l'email è presente nella lista allora la persona potrà partecipare alla festa
+    if (userEmail == birthdayList[i]) {
+      checkEmail = true;
+      break;
+    }
   }
-}
 
-//Avviso l'utente sul risultato del confronto
-if (checkEmail == true) {
-  console.log("Ciao, benvenuto alla festa!");
+  //Avviso l'utente sul risultato del confronto
+  if (checkEmail == true) {
+    console.log("Ciao, benvenuto alla festa!");
+  } else {
+    console.log("Mi dispiace ma non sei stato invitato.");
+  }
+
 } else {
-  console.log("Mi dispiace ma non sei stato invitato.");
+  console.log("Email non valida!");
 }
-
 
 //TRACCIA 2
 
@@ -50,17 +61,19 @@ let pcRes = 0;
 //METHODS
 //Lancio del dado per l'utente
 userRes = Math.floor(Math.random() * dadoSix.length);
-console.log(`Il giocatore ha tirato il dado è ha ottenuto il numero ${userRes}`);
+console.log(
+  `Il giocatore ha tirato il dado è ha ottenuto il numero ${userRes}`
+);
 
 //Lancio del dado per il pc
 pcRes = Math.floor(Math.random() * dadoSix.length);
 console.log(`Il computer ha tirato il dado è ha ottenuto il numero ${pcRes}`);
 
 //Confronto i risultati e decreto il vincitore
-if(userRes > pcRes) {
-    console.log("Il giocatore vince!");
-} else if(userRes < pcRes) {
-    console.log("Il computer vince!");
+if (userRes > pcRes) {
+  console.log("Il giocatore vince!");
+} else if (userRes < pcRes) {
+  console.log("Il computer vince!");
 } else {
-    console.log("Pareggio!");
+  console.log("Pareggio!");
 }
