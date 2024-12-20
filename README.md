@@ -38,3 +38,23 @@ Gioco dei dadi
 Generare un numero random da 1 a 6, sia per il giocatore sia per il computer. Stabilire il vincitore, in base a chi fa il punteggio più alto.Prima di partire a scrivere codice poniamoci qualche domanda:
 Che ci sia un array da qualche parte?
 Se dobbiamo confrontare qualcosa che “cosa” ci serve?
+
+HUMAN CODE:
+
+-LANCIO UN DADO A 6 FACCE
+
+-SCRIVO IL RISULTATO DEL DADO
+
+-IL COMPUTER LANCIA UN DADO 6 FACCE
+
+-SCRIVO IL RISULTATO DEL DADO
+
+-PARAGONO I DUE RISULTATI
+    -SE IL MIO NUMERO E' SUPERIORE A QUELLO OTTENUTO DAL COMPUTER
+        -IO HO VINTO E IL COMPUTER HA PERSO
+    -SE IL MIO NUMERO E' INFERIORE A QUELLO OTTENUTO DAL COMPUTER
+        -IO HO PERSO E IL COMPUTER HA VINTO
+    -ALTRIMENTI
+        -IO E IL COMPUTER ABBIAMO PAREGGIATO
+
+-FINE DEL GIOCO

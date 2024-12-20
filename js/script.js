@@ -16,7 +16,7 @@ const birthdayList = [
   "user3@gmail.it",
   "email4@gmail.com",
   "utentenumero5@libero.it",
-  "sixthuser@hotmail.com"
+  "sixthuser@hotmail.com",
 ];
 
 //METHODS
@@ -29,8 +29,12 @@ for (let i = 0; i < birthdayList.length; i++) {
 }
 
 //Avviso l'utente sul risultato del confronto
-if(checkEmail == true) {
-    console.log("Ciao, benvenuto alla festa!");
+if (checkEmail == true) {
+  console.log("Ciao, benvenuto alla festa!");
 } else {
-    console.log("Mi dispiace ma non sei stato invitato.");
+  console.log("Mi dispiace ma non sei stato invitato.");
 }
+
+
+//TRACCIA 2
+
