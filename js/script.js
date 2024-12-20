@@ -27,3 +27,10 @@ for (let i = 0; i < birthdayList.length; i++) {
     break;
   }
 }
+
+//Avviso l'utente sul risultato del confronto
+if(checkEmail == true) {
+    console.log("Ciao, benvenuto alla festa!");
+} else {
+    console.log("Mi dispiace ma non sei stato invitato.");
+}
